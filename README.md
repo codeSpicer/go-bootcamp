@@ -11,7 +11,6 @@ This repository documents my comprehensive learning journey through the Go progr
   - [x] Arithmetic Operators (`module-3-arthimetic-operators/operators.go`): Basic arithmetic operations, integer division, modulo, and overflow/underflow notes.
   - [x] Loops (`module-4-loops/loops.go`): For loops, range, break/continue, and while-style loops.
   - [ ] Arrays (`module-5-arrays/`): _(Module present, content coming soon)_
-  - [ ] Control Flow (If/Else, Switch)
   - [ ] Functions
   - [ ] Packages and Modules
   - [ ] ...
