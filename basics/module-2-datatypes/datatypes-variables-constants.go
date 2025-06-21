@@ -25,9 +25,17 @@ func main() {
 	// string types -> ""
 	// pointer , structs , slice , map  , functions -> nil
 
-	// SCOPE
+	// SCOPE is blocked scope in go
 	fmt.Println(globalName)
 
+	const pi = 3.14
+	const gravity float32 = 9.8
+
+	const (
+		monday    = 1
+		tuesday   = 2
+		wednesday = 3
+	)
 }
 
 func printName() {
