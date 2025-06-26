@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 )
 
@@ -17,12 +18,17 @@ func FunctionsWithMultiReturn() {
 	fmt.Printf("divideAndRemainder(17, 5): quotient = %d, remainder = %d\n", quot, rem)
 
 	// Function returning named values
-	min, max := minMax(8, 15)
+	min, max, _ := minMax(8, 15)
 	fmt.Printf("minMax(8, 15): min = %d, max = %d\n", min, max)
 
 	// Ignoring one of the returned values using blank identifier
-	_, onlyMax := minMax(4, 9)
+	_, onlyMax, _ := minMax(4, 9)
 	fmt.Printf("minMax(4, 9): only max = %d (min ignored)\n", onlyMax)
+
+	x, y, err := minMax(3, 3)
+	if err != nil {
+		fmt.Println(x, "is equal to", y)
+	}
 }
 
 // sumAndDiff takes two integers and returns their sum and difference.
@@ -36,11 +42,13 @@ func divideAndRemainder(a, b int) (int, int) {
 }
 
 // minMax returns the minimum and maximum of two integers using named return values.
-func minMax(a, b int) (min int, max int) {
+func minMax(a, b int) (min int, max int, err error) {
 	if a < b {
 		min, max = a, b
-	} else {
+		return
+	} else if b < a {
 		min, max = b, a
+		return
 	}
-	return // returns named values
+	return a, b, errors.New("Unable to compute")
 }

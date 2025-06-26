@@ -10,4 +10,6 @@ func main() {
 
 	FunctionsWithMultiReturn()
 
+	VariadictFunctions()
+
 }
