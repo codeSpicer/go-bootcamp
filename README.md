@@ -4,7 +4,7 @@ This repository documents my comprehensive learning journey through the Go progr
 
 ## Learning Path & Progress
 
-- **Basics:**
+- **Basics:** ✅ **COMPLETED**
 
   - [x] Introduction to Go (`module-1-intro-to-go/hello.go`): Basic Go program structure, printing, and logger usage.
   - [x] Data Types, Variables, and Constants (`module-2-datatypes/datatypes-variables-constants.go`): Declaring variables, constants, type inference, and scope.
@@ -13,12 +13,17 @@ This repository documents my comprehensive learning journey through the Go progr
   - [x] Arrays (`module-5-arrays/arrays.go`): Array declaration, initialization, iteration, copying, multidimensional arrays, and pointers to arrays.
   - [x] Slices (`module-6-slices/slices.go`): Slice declaration, initialization, slicing, appending, copying, 2D slices, and length vs. capacity.
   - [x] Maps (`module-7-maps/maps.go`): Map declaration, initialization, adding, deleting, checking existence, iterating, and multi-dimensional maps.
-  - [ ] Functions
-  - [ ] Packages and Modules
-  - [ ] ...
+  - [x] Range (`module-8-range/range.go`): Using range with arrays, slices, maps, and strings.
+  - [x] Functions (`module-9-functions/`): Function declaration, parameters, return values, multiple returns, variadic functions, and function types.
+  - [x] Defer (`module-10-defer/defer.go`): Defer statements, execution order, and common use cases.
+  - [x] Panic (`module-11-panic/panic.go`): Panic mechanism, built-in panic function, and panic scenarios.
+  - [x] Recover (`module-12-recover/recover.go`): Recover function, panic recovery, and error handling patterns.
+  - [x] Exit (`module-13-exit/exit.go`): Program termination with os.Exit and exit codes.
+  - [x] Init (`module-14-init/init.go`): Init function, package initialization, and execution order.
 
-- **Intermediate:**
+- **Intermediate:** **IN PROGRESS**
 
+  - [x] Closures (`01-clousures/closure.go`): Function closures, lexical scoping, and closure patterns.
   - [ ] Structs, Maps, Slices
   - [ ] Pointers
   - [ ] Interfaces
