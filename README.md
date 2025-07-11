@@ -24,7 +24,13 @@ This repository documents my comprehensive learning journey through the Go progr
 - **Intermediate:** **IN PROGRESS**
 
   - [x] Closures (`01-clousures/closure.go`): Function closures, lexical scoping, and closure patterns.
-  - [ ] Structs, Maps, Slices
+  - [x] Structs (`05-struct/struct.go`):
+    - Defining structs, nested structs, and anonymous (embedded) fields.
+    - Initializing structs using composite literals and dot notation.
+    - Anonymous structs for ad-hoc data.
+    - Struct comparison using the equality operator.
+    - Example: See `intermediate/05-struct/struct.go` for a comprehensive demonstration.
+  - [ ] Maps, Slices
   - [ ] Pointers
   - [ ] Interfaces
   - [ ] Error Handling
