@@ -9,10 +9,12 @@ func main() {
 	msg := "Hello\tworld"
 	raw_msg1 := `Hello \nworld` // string literal (raw string)
 	msg2 := "Hello \rworld!"
+	msg3 := "12345\r678"
 
 	fmt.Println(msg)
 	fmt.Println(raw_msg1)
 	fmt.Println(msg2)
+	fmt.Println(msg3)
 
 	// runes are int32 values that represent Unicode code points
 	// strings are sequences of bytes (UTF-8 encoded in Go)

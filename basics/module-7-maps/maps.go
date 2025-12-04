@@ -78,4 +78,16 @@ func main() {
 
 	fmt.Println(twoDmap) // Output: map[map1:map[1:one 2:two]]
 
+	// maps in golang are used as sets
+	numSet := map[int]struct{}{} // struct{}{} takes zero byte
+
+	numSet[3] = struct{}{} // adding element
+
+	_, exists = numSet[3]
+	fmt.Println(exists)
+	
+	delete(numSet, 1)
+
+	fmt.Println(len(numSet))
+
 }
