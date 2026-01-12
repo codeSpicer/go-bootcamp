@@ -1,0 +1,6 @@
+to generate the ssl certificates
+openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 365 -config openssl.cnf
+can be added to postman
+
+-v for verbose and -k to bypass certificate validation
+curl -v -k https://localhost:3000/orders
